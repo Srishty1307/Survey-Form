@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1 id="title">FASHION TRENDS AND PREFERENCES 2024</h1>
+            <p id="description">Help Us Understand The Latest In Fashion</p>
+        </header>
+    </section>
+    <div class="main-container">
+        <div class="container-wrapper">
+        <div class="container">
+            <main>
+                <form id="survey">
+                    <section>
+                        <h3>NAME</h3>
+                        <label for="name"><input id="name" type="text" placeholder="First Name Last Name" required></label>
+                        <h3>EMAIL</h3>
+                        <label for="email"><input id="email" type="email" placeholder="eg; xyz123@abc.com" required></label>
+                        <h3>AGE</h3>
+                        <label for="age"><input id="age" type="number" min="10" max="99" placeholder="age" required></label>
+                        <h3>GENDER</h3>
+                        <select id="gender" name="gender" required>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Non-Binary">Non-Binary</option>
+                            <option value="Prefer-Not-To-Say">Prefer Not To Say</option>
+                        </select>
+                    </section>
+                    <section>
+                        <h3>CLOTHING PREFERENCES</h3>
+                        <fieldset>
+                            <legend><strong>What style of clothing do you prefer? (Select all that apply)</strong></legend>
+                            <label><input type="checkbox" value="casual">Casual</label><br>
+                            <label><input type="checkbox" value="Formal">Formal</label><br>
+                            <label><input type="checkbox" value="Business Casual">Business Casual</label><br>
+                            <label><input type="checkbox" value="Sporty">Sporty/Athletic</label><br>
+                            <label><input type="checkbox" value="Bohemian">Bohemian</label><br>
+                            <label><input type="checkbox" value="Vintage">Vintage</label><br>
+                            <label><input type="checkbox" value="Streetwear">Streetwear</label><br>
+                            <label><input type="checkbox" value="other"> Other <input type="text" placeholder="mention your preferences"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>What type of fabric do you prefer for your clothing? (Select all that apply)</strong></legend>
+                            <label><input type="checkbox" value="Cotton">Cotton</label><br>
+                            <label><input type="checkbox" value="Polyester">Polyester</label><br>
+                            <label><input type="checkbox" value="Wool">Wool</label><br>
+                            <label><input type="checkbox" value="Silk">Silk</label><br>
+                            <label><input type="checkbox" value="Linen">Linen</label><br>
+                            <label><input type="checkbox" value="Denim">Denim</label><br>
+                            <label><input type="checkbox" value="Leather">Leather</label><br>
+                            <label><input type="checkbox" value="other"> Other <input type="text" placeholder="mention your preferences"></label>
+                        </fieldset>
+                        <h3>SHOPPING HABITS</h3>
+                        <fieldset>
+                            <legend><strong>What is your average monthly budget for clothing?</strong></legend>
+                            <label><input type="radio" name="budget" value="<50">Less than $50</label><br>
+                            <label><input type="radio" name="budget" value="50-100"> $50-$100</label><br>
+                            <label><input type="radio" name="budget" value="100-200"> $100-$200</label><br>
+                            <label><input type="radio" name="budget" value="200-500"> $200-$500</label><br>
+                            <label><input type="radio" name="budget" value=">500">More than $500</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>How often do you shop for clothes? (Select all that apply)</strong></legend>
+                            <label><input type="checkbox" value="once a week">Once a week</label><br>
+                            <label><input type="checkbox" value="once a month">Once a month</label><br>
+                            <label><input type="checkbox" value="every few months">Every few months</label><br>
+                            <label><input type="checkbox" value="once or twice a year">Once or twice a year</label><br>
+                            <label><input type="checkbox" value="rarely">Rarely</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>Where do you usually shop for clothes? (Select all that apply)</strong></legend>
+                            <label><input type="checkbox" value="online stores">Online stores</label><br>
+                            <label><input type="checkbox" value="physical stores">Physical stores</label><br>
+                            <label><input type="checkbox" value="thrift stores">Thrift stores</label><br>
+                            <label><input type="checkbox" value="departmental stores">Departmental stores</label><br>
+                            <label><input type="checkbox" value="boutiques">Boutiques</label><br>
+                            <label><input type="checkbox" value="other">Other <input type="text" placeholder="mention your preferences"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>What are your favorite clothing brands? (Select all that apply)</strong></legend>
+                            <label><input type="checkbox" value="Nike">Nike</label><br>
+                            <label><input type="checkbox" value="Adidas">Adidas</label><br>
+                            <label><input type="checkbox" value="Zara">Zara</label><br>
+                            <label><input type="checkbox" value="H&M">H&M</label><br>
+                            <label><input type="checkbox" value="Uniqlo">Uniqlo</label><br>
+                            <label><input type="checkbox" value="GAP">GAP</label><br>
+                            <label><input type="checkbox" value="Levi's">Levi's</label><br>
+                            <label><input type="checkbox" value="Other">Other <input type="text" placeholder="mention your preferences"></label>
+                        </fieldset>
+                        <h3>OPINION BASED QUESTIONS</h3>
+                        <fieldset>
+                            <legend><strong>How important is sustainability when choosing clothes?</strong></legend>
+                            <label><input type="radio" name="sustainability" value="not important">Not important</label><br>
+                            <label><input type="radio" name="sustainability" value="slightly important">Slightly important</label><br>
+                            <label><input type="radio" name="sustainability" value="moderately important">Moderately important</label><br>
+                            <label><input type="radio" name="sustainability" value="very important">Very important</label><br>
+                            <label><input type="radio" name="sustainability" value="extremely important">Extremely important</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>Do you follow current fashion trends?</strong></legend>
+                            <label><input type="radio" name="trends" value="yes, always">Yes, always</label><br>
+                            <label><input type="radio" name="trends" value="sometimes">Sometimes</label><br>
+                            <label><input type="radio" name="trends" value="rarely">Rarely</label><br>
+                            <label><input type="radio" name="trends" value="no, never">No, never</label>
+                        </fieldset>
+                        <section>
+                            <legend><strong>What improvement would you like to see in the clothing industry?</strong></legend>
+                            <textarea name="improvement suggestions" id="feedback" rows="6" class="textarea"></textarea>
+                        </section>
+                        <section>
+                            <legend><strong>Is there anything else you would like to share about your clothing preferences?</strong></legend>
+                            <textarea name="additional comments" rows="6" class="textarea"></textarea>
+                        </section>
+                        <section><button id="submit" type="submit">Submit</button></section>
+                    </form>
+                </main>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
