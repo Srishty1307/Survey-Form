@@ -1,7 +1,7 @@
 body {
     background-image: url("clothing.avif");
     background-size: cover;
-    margin: 0;
+    background-position: center;
 }
 
 .main-container {
